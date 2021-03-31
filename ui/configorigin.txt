@@ -5,3 +5,4 @@ https://outsystemscloud.com
 https://netlify.app
 https://admiring-brown-c5533a.netlify.app
 http://localhost
+http://localhost:7000
