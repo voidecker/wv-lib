@@ -6,3 +6,4 @@ https://netlify.app
 https://admiring-brown-c5533a.netlify.app
 http://localhost
 http://localhost:7000
+https://rz-lcfe01-dev.bb-law.de
