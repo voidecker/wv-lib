@@ -152,7 +152,7 @@ window.addEventListener('viewerLoaded', () => {
   };
 
   // adding the annotation which later will be converted to form fields
-  iframeWindow.addFormFieldAnnot = (type, name, value, flag) => {
+  const addFormFieldAnnot = (type, name, value, flag) => {
     const zoom = docViewer.getZoom();
     const doc = docViewer.getDocument();
     const displayMode = docViewer.getDisplayModeManager().getDisplayMode();
@@ -235,7 +235,7 @@ window.addEventListener('viewerLoaded', () => {
     if (type === 'sign' && name !== '') {
       viewerWindow.addFormFieldAnnot('SIGNATURE', name, '', flag);
     } else if (type === 'text' && name !== '') {
-      viewerWindow.addFormFieldAnnot('TEXT', name, value, flag);
+      addFormFieldAnnot('TEXT', name, value, flag);
     } else if (type === 'check' && name !== '') {
       viewerWindow.addFormFieldAnnot('CHECK', name, '', flag);
     } else if (type === 'radio' && name !== '') {
