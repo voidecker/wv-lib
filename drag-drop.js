@@ -48,21 +48,22 @@ setTimeout(() => {
   };
 
   // Event listeners
-  viewerElement.addEventListener('ready', () => {
-    viewerWindow = viewerElement.querySelector('iframe').contentWindow;
-    viewerWindow.document.body.addEventListener('dragover', e => {
-      e.preventDefault();
-      return false;
-    });
-    viewerWindow.document.body.addEventListener('drop', e => {
-      const scrollElement = viewerWindow.docViewer.getScrollViewElement();
-      const scrollLeft = scrollElement.scrollLeft || 0;
-      const scrollTop = scrollElement.scrollTop || 0;
-      viewerWindow.setDropPoint({ x: e.pageX + scrollLeft, y: e.pageY + scrollTop });
-      e.preventDefault();
-      return false;
-    });
+  // viewerElement.addEventListener('ready', () => {
+  viewerWindow = viewerElement.querySelector('iframe').contentWindow;
+  console.log(viewerWindow);
+  viewerWindow.document.body.addEventListener('dragover', e => {
+    e.preventDefault();
+    return false;
   });
+  viewerWindow.document.body.addEventListener('drop', e => {
+    const scrollElement = viewerWindow.docViewer.getScrollViewElement();
+    const scrollLeft = scrollElement.scrollLeft || 0;
+    const scrollTop = scrollElement.scrollTop || 0;
+    viewerWindow.setDropPoint({ x: e.pageX + scrollLeft, y: e.pageY + scrollTop });
+    e.preventDefault();
+    return false;
+  });
+  // });
 
   const addElement = document.getElementById('Add');
   addElement.addEventListener('click', addFormAnnot);
