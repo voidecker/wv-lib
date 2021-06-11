@@ -219,8 +219,8 @@ window.addEventListener('viewerLoaded', () => {
     const value = 'hello world'; // document.getElementById('value').value;
     const type = 'Text'; // document.getElementById('fieldType').value;
     const flag = {
-      readOnly: false // document.getElementById('readOnly').checked,
-      multiline: false // document.getElementById('multiline').checked,
+      readOnly: false, // document.getElementById('readOnly').checked,
+      multiline: false, // document.getElementById('multiline').checked,
     };
     /**
      * Grouping radio buttons require the field name to be the same, thus save
