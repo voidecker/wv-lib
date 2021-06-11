@@ -219,7 +219,7 @@ window.addEventListener('viewerLoaded', () => {
     console.log('addFormAnnot');
     let name = 'testing';
     const value = 'hello world'; // document.getElementById('value').value;
-    const type = 'Text'; // document.getElementById('fieldType').value;
+    const type = 'text'; // document.getElementById('fieldType').value;
     const flag = {
       readOnly: false, // document.getElementById('readOnly').checked,
       multiline: false, // document.getElementById('multiline').checked,
