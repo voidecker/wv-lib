@@ -215,7 +215,7 @@ window.addEventListener('viewerLoaded', () => {
   // const viewerElement = window.parent.document.getElementById('viewer');
 
   const addFormAnnot = () => {
-    let name = document.getElementById('name').value.replace(' ', '_');
+    let name = 'testing';
     const value = document.getElementById('value').value;
     const type = document.getElementById('fieldType').value;
     const flag = {
