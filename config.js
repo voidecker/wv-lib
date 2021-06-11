@@ -317,5 +317,5 @@ window.addEventListener('viewerLoaded', () => {
   */
   // in case first dropdown value on init is not of type text
   // disable multiline checkbox
-  onFieldTypeValueChanged();
+  // onFieldTypeValueChanged();
 });
