@@ -5,4 +5,6 @@ console.log(window);
 console.log(window.parent);
 console.log(window.parent.document);
 console.log(window.document);
-console.log(window.document.getElementById('viewer'));
+setTimeout(() => {
+  console.log(window.document.getElementById('viewer'));
+}, 5000);
