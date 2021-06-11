@@ -153,6 +153,7 @@ window.addEventListener('viewerLoaded', () => {
 
   // adding the annotation which later will be converted to form fields
   const addFormFieldAnnot = (type, name, value, flag) => {
+    console.log('testing');
     const zoom = docViewer.getZoom();
     const doc = docViewer.getDocument();
     const displayMode = docViewer.getDisplayModeManager().getDisplayMode();
