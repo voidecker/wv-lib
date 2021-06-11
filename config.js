@@ -5,9 +5,11 @@ window.addEventListener('viewerLoaded', () => {
   const instance = readerControl;
 
   let dropPoint = {};
-  const { docViewer, Annotations, CoreControls, annotManager, iframeWindow } = instance;
+  const { docViewer, annotManager } = instance;
   const { WidgetFlags } = Annotations;
   const fieldManager = annotManager.getFieldManager();
+  iframeWindow = document.getElementById('webviewer-1').contentWindow;
+  console.log(iframeWindow);
 
   iframeWindow.convertAnnotToFormField = () => {
     const annotationsList = annotManager.getAnnotationsList();
