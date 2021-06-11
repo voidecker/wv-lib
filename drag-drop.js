@@ -1,6 +1,5 @@
-let viewerWindow;
-
 window.addEventListener('viewerLoaded', () => {
+  console.log('Hello World');
   const viewerElement = window.parent.document.getElementById('viewer');
   console.log(viewerElement);
   
