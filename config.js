@@ -10,6 +10,8 @@ window.addEventListener('viewerLoaded', () => {
   const { WidgetFlags } = Annotations;
   const fieldManager = annotManager.getFieldManager();
   iframeWindow = document.getElementById('webviewer-1').contentWindow;
+  console.log(window);
+  console.log(document);
   console.log(iframeWindow);
 
   iframeWindow.convertAnnotToFormField = () => {
