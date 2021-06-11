@@ -1,6 +1,6 @@
 let viewerWindow;
 
-setTimeout(() => {
+window.addEventListener('viewerLoaded', () => {
   const viewerElement = window.parent.document.getElementById('viewer');
   console.log(viewerElement);
   
@@ -19,4 +19,4 @@ setTimeout(() => {
         return false;
     });
   });
-}, 5000);
+});
