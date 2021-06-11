@@ -12,7 +12,7 @@ window.addEventListener('viewerLoaded', () => {
   iframeWindow = window;
   console.log(iframeWindow);
 
-  iframeWindow.convertAnnotToFormField = () => {
+  convertAnnotToFormField = () => {
     const annotationsList = annotManager.getAnnotationsList();
     const annotsToDelete = [];
     const annotsToDraw = [];
@@ -310,7 +310,7 @@ window.addEventListener('viewerLoaded', () => {
   });
 
   document.getElementById('Apply').addEventListener('click', () => {
-    viewerWindow.convertAnnotToFormField();
+    convertAnnotToFormField();
   });
 
   /*
