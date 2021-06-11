@@ -216,6 +216,7 @@ window.addEventListener('viewerLoaded', () => {
   // const viewerElement = window.parent.document.getElementById('viewer');
 
   const addFormAnnot = () => {
+    console.log('addFormAnnot');
     let name = 'testing';
     const value = 'hello world'; // document.getElementById('value').value;
     const type = 'Text'; // document.getElementById('fieldType').value;
@@ -302,6 +303,7 @@ window.addEventListener('viewerLoaded', () => {
 
   addElement.addEventListener('dragend', e => {
     addFormAnnot();
+    console.log('dragend');
     e.target.style.opacity = 1;
     document.body.removeChild(document.getElementById('form-build-drag-image-copy'));
     e.preventDefault();
