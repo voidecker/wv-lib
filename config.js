@@ -216,11 +216,11 @@ window.addEventListener('viewerLoaded', () => {
 
   const addFormAnnot = () => {
     let name = 'testing';
-    const value = document.getElementById('value').value;
-    const type = document.getElementById('fieldType').value;
+    const value = 'hello world'; // document.getElementById('value').value;
+    const type = 'Text'; // document.getElementById('fieldType').value;
     const flag = {
-      readOnly: document.getElementById('readOnly').checked,
-      multiline: document.getElementById('multiline').checked,
+      readOnly: false // document.getElementById('readOnly').checked,
+      multiline: false // document.getElementById('multiline').checked,
     };
     /**
      * Grouping radio buttons require the field name to be the same, thus save
@@ -229,9 +229,9 @@ window.addEventListener('viewerLoaded', () => {
      */
     const origName = name;
     name += Date.now();
-    document.getElementById('name').value = '';
-    document.getElementById('value').value = '';
-    document.getElementById('readOnly').checked = false;
+    // document.getElementById('name').value = '';
+    // document.getElementById('value').value = '';
+    // document.getElementById('readOnly').checked = false;
     if (type === 'sign' && name !== '') {
       viewerWindow.addFormFieldAnnot('SIGNATURE', name, '', flag);
     } else if (type === 'text' && name !== '') {
