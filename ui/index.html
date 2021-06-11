@@ -10,8 +10,35 @@
 </head>
 
 <body>
+  <h2>Step 1: Field Type</h2>
+  <select id="fieldType" style="width: 200px">
+    <option value="text">Text</option>
+    <option value="sign">Signature</option>
+    <option value="check">Checkbox</option>
+    <option value="radio">Radio</option>
+  </select>
+
+  <h2>Step 2: Field Name</h2>
+  <p id="radioNote">Use the same field name to group radio buttons. The field value will reflect a selectable option.</p>
+  <div><label for="name">Name:</label> <input type="text" id="name" name="name" required minlength="2" style="width: 200px" /></div>
+
+  <div><label for="value">Value:</label> <input type="text" id="value" name="value" minlength="2" style="width: 200px" /></div>
+
+  <h2>Step 3: Field Properties</h2>
+  <p>More <a href="https://www.pdftron.com/api/web/PDFNet.Field.html#getFlag__anchor" target="_blank">flags</a> (field properties)</p>
+  <input type="checkbox" id="readOnly" name="readOnly" />
+  <label for="readOnly">Read Only</label><br />
+  <input type="checkbox" id="multiline" name="multiline" />
+  <label for="multiline">Multiline</label>
+
+  <h2>Step 4: Add Field</h2>
+  <p>Add field to the document as annotation, you can now resize and reposition</p>
   <a href="#" type="button" class="Button" id="Add" draggable="true">Add field</a>
+
+  <h2>Step 5: Apply fields</h2>
+  <p>After you are done positioning and resizing, convert fields into form fields</p>
   <a href="#" type="button" class="Button" id="Apply">Apply fields</a>
+
   <div id="app"></div>
   <div id="line-connector-wrapper">
     <div id="line-connector-root"></div>
