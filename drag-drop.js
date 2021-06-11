@@ -1,4 +1,4 @@
-window.parent.addEventListener('viewerLoaded', () => {
+setTimeout(() => {
   console.log('Hello World');
   const viewerElement = window.parent.document.getElementById('viewer');
   console.log(viewerElement);
@@ -18,4 +18,4 @@ window.parent.addEventListener('viewerLoaded', () => {
         return false;
     });
   });
-});
+}, 5000);
