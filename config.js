@@ -243,6 +243,7 @@ window.addEventListener('viewerLoaded', () => {
     }
   };
 
+  /*
   const onFieldTypeValueChanged = () => {
     const dropdownVal = document.getElementById('fieldType').value;
     const multilineCheckboxEl = document.getElementById('multiline');
@@ -256,6 +257,7 @@ window.addEventListener('viewerLoaded', () => {
     const radioNoteEl = document.getElementById('radioNote');
     radioNoteEl.hidden = dropdownVal !== 'radio';
   };
+  */
 
   // Event listeners
   // viewerElement.addEventListener('ready', () => {
@@ -308,9 +310,11 @@ window.addEventListener('viewerLoaded', () => {
     viewerWindow.convertAnnotToFormField();
   });
 
+  /*
   document.getElementById('fieldType').addEventListener('change', () => {
     onFieldTypeValueChanged();
   });
+  */
   // in case first dropdown value on init is not of type text
   // disable multiline checkbox
   onFieldTypeValueChanged();
