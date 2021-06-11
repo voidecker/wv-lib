@@ -212,7 +212,7 @@ window.addEventListener('viewerLoaded', () => {
   };
   
   let viewerWindow;
-  const viewerElement = window.parent.document.getElementById('viewer');
+  // const viewerElement = window.parent.document.getElementById('viewer');
 
   const addFormAnnot = () => {
     let name = document.getElementById('name').value.replace(' ', '_');
