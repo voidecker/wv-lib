@@ -5,7 +5,8 @@ window.addEventListener('viewerLoaded', () => {
   const instance = readerControl;
 
   let dropPoint = {};
-  const { docViewer, annotManager } = instance;
+  const { docViewer } = instance;
+  const annotManager = docViewer.getAnnotationManager();
   const { WidgetFlags } = Annotations;
   const fieldManager = annotManager.getFieldManager();
   iframeWindow = document.getElementById('webviewer-1').contentWindow;
