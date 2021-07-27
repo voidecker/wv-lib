@@ -12,3 +12,4 @@ https://devcsp.qmodoai.com/editor/POC/PDFtron
 http://localhost:3000/
 http://localhost:4200
 https://devcsp.qmodoai.com/editor/POC/PdfSegmentationCustomWebComponent
+https://jamesdevriesdemos.outsystemscloud.com/
