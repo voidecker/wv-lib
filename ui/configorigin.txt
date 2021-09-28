@@ -6,7 +6,6 @@ https://netlify.app
 https://admiring-brown-c5533a.netlify.app
 http://localhost
 http://localhost:7000
-https://rz-lcfe01-dev.bb-law.de
 http://localhost:4000
 https://devcsp.qmodoai.com/editor/POC/PDFtron
 http://localhost:3000/
@@ -14,3 +13,4 @@ http://localhost:4200
 https://devcsp.qmodoai.com/editor/POC/PdfSegmentationCustomWebComponent
 https://jamesdevriesdemos.outsystemscloud.com
 https://personal-75ywymut.outsystemscloud.com
+http://127.0.0.1
