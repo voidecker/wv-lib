@@ -14,3 +14,4 @@ https://devcsp.qmodoai.com/editor/POC/PdfSegmentationCustomWebComponent
 https://jamesdevriesdemos.outsystemscloud.com
 https://personal-75ywymut.outsystemscloud.com
 http://127.0.0.1
+file:///C:/Users/Correy/projects/pdftron/CefPythonExample/index.html
